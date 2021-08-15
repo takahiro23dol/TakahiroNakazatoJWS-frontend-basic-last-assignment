@@ -1,0 +1,42 @@
+@use "../../variables" as *;
+
+.btn {
+  color: $white;
+  font-size: $S;
+  font-family: $fontfamily-gothic;
+  background-color: $black;
+  height: 55px;
+  width: 200px;
+  line-height: 55px;
+  margin: 20px;
+  padding: 0;
+  border-radius: 0;
+  display: inline-block;
+  transition: all 0.2s 0s ease;
+
+  &:hover {
+    color: $white;
+    background-color: $orange-bistre;
+  }
+}
+
+@media (max-width: $xl) {
+  .btn {
+    width: 200px;
+    height: 55px;
+  }
+}
+
+@media (max-width: $lg) {
+  .btn {
+    width: 155px;
+    height: 55px;
+  }
+}
+
+@media (max-width: $md) {
+  .btn {
+    width: 180px;
+    height: 55px;
+  }
+}
