@@ -2,7 +2,7 @@
 
 .btn {
   color: $white;
-  font-size: $S;
+  font-size: $font-size-S;
   font-family: $fontfamily-gothic;
   background-color: $black;
   height: 55px;
@@ -12,7 +12,7 @@
   padding: 0;
   border-radius: 0;
   display: inline-block;
-  transition: all 0.2s 0s ease;
+  transition: background-color 0.2s 0s ease;
 
   &:hover {
     color: $white;
@@ -20,23 +20,20 @@
   }
 }
 
-@media (max-width: $xl) {
+@media (max-width: $breakpoint-xl) {
   .btn {
     width: 200px;
-    height: 55px;
   }
 }
 
-@media (max-width: $lg) {
+@media (max-width: $breakpoint-lg) {
   .btn {
     width: 155px;
-    height: 55px;
   }
 }
 
-@media (max-width: $md) {
+@media (max-width: $breakpoint-md) {
   .btn {
     width: 180px;
-    height: 55px;
   }
 }
