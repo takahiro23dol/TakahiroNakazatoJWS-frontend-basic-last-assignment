@@ -1,0 +1,39 @@
+@use "../../variables" as *;
+
+.btn {
+  color: $white;
+  font-size: $font-size-S;
+  font-family: $fontfamily-gothic;
+  background-color: $black;
+  height: 55px;
+  width: 200px;
+  line-height: 55px;
+  margin: 20px;
+  padding: 0;
+  border-radius: 0;
+  display: inline-block;
+  transition: background-color 0.2s 0s ease;
+
+  &:hover {
+    color: $white;
+    background-color: $orange-bistre;
+  }
+}
+
+@media (max-width: $breakpoint-xl) {
+  .btn {
+    width: 200px;
+  }
+}
+
+@media (max-width: $breakpoint-lg) {
+  .btn {
+    width: 155px;
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .btn {
+    width: 180px;
+  }
+}

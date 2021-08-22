@@ -1,4 +1,10 @@
-/* 使用例 */
+
+@use "./variables" as *;
+
+html {
+  font-family: $fontfamily-gothic;
+}
+
 h2 {
   font-size: 38px;
 }
